@@ -112,11 +112,19 @@ body {
     overflow: hidden;
 }
 
+.equation {
+  background-color: rgb(28, 28, 28);
+  color: rgb(232, 232, 232);
+  border-radius: 12px 12px 0 0;
+  padding: 18px 18px 12px;
+  text-align: right;
+  font-size: 1.25em;
+}
+
 .display {
     background-color: rgb(28, 28, 28);
     color: rgb(232, 232, 232);
-    border-radius: 12px 12px 0 0;
-    padding: .5em .75em;
+    padding: 0 18px 12px 18px;
     text-align: right;
     font-size: 2.5em;
 }
@@ -165,6 +173,10 @@ body {
     border-radius: 2em;
     top: 0;
     z-index: 1;
+}
+
+[data-state="selected"] {
+  background: #64d7fa;
 }
 
 .key-operator {
