@@ -43,6 +43,11 @@ keys.addEventListener('click', event => {
         display.textContent = operate(firstNumber, operator, secondNumber);
     }
 
+    if (type == 'clear') {
+        display.textContent = 0;
+        equation.textContent = '';
+    }
+
     calculator.dataset.previousKeyType = type;
 })
 
